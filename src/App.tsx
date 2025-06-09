@@ -35,7 +35,7 @@ function App() {
       <footer className="bg-white border-t border-gray-200 mt-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="text-center text-sm text-gray-600">
-            <p>© 2024 أكاديمية الجرافيك ديزاين - جميع الحقوق محفوظة</p>
+            <p>2025 OnClick - جميع الحقوق محفوظ© </p>
           </div>
         </div>
       </footer>

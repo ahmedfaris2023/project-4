@@ -1,71 +1,71 @@
-import { Users, Award, FileText, TrendingUp } from 'lucide-react';
+import { Users, Award, FileText, TrendingUp } from "lucide-react";
 
 const Overview = () => {
   const stats = [
     {
-      title: 'إجمالي الطلاب',
-      value: '24',
+      title: "إجمالي الطلاب",
+      value: "27",
       icon: Users,
-      color: 'bg-blue-500',
-      change: '+3 هذا الشهر'
+      color: "bg-blue-500",
+      change: "مدة الدورة شهر ونص ",
     },
     {
-      title: 'متوسط الدرجات',
-      value: '85.2',
+      title: "متوسط الدرجات",
+      value: "74.2",
       icon: Award,
-      color: 'bg-green-500',
-      change: '+2.1 من الأسبوع الماضي'
+      color: "bg-green-500",
+      change: "+2.1 من الأسبوع الماضي",
     },
     {
-      title: 'المهام المكتملة',
-      value: '18/20',
+      title: "المهام المكتملة",
+      value: "  10/20",
       icon: FileText,
-      color: 'bg-orange-500',
-      change: '90% معدل الإنجاز'
+      color: "bg-orange-500",
+      change: "85% معدل الإنجاز",
     },
     {
-      title: 'معدل التحسن',
-      value: '+12%',
+      title: "معدل التحسن",
+      value: "+12%",
       icon: TrendingUp,
-      color: 'bg-purple-500',
-      change: 'مقارنة بالشهر الماضي'
+      color: "bg-purple-500",
+      change: "مقارنة بالاسبوع الماضي",
     },
   ];
 
   const recentActivity = [
     {
-      student: 'أحمد محمود',
-      action: 'حصل على درجة 95 في مشروع الهوية البصرية',
-      time: 'منذ ساعتين',
-      type: 'grade'
+      student: "ريام محمد يحيى",
+      action: "اكمال مجموعة تصاميم مبيعات اجهزة الكترونية",
+      time: "منذ يوم",
+      type: "grade",
     },
     {
-      student: 'فاطمة علي',
-      action: 'سلمت مهمة تصميم البوستر',
-      time: 'منذ 4 ساعات',
-      type: 'assignment'
+      student: "مريم حسام صالح",
+      action: "TECNO اكمال مجموعة تصاميم مبيعات اجهزة هاتف لشركة ",
+      time: "منذ يوم",
+      type: "grade",
     },
     {
-      student: 'محمد خالد',
-      action: 'حصل على المركز الأول هذا الأسبوع',
-      time: 'أمس',
-      type: 'achievement'
+      student: "سارة صلاح ",
+      action: " اكمال مجموعة تصاميم مبيعات اجهزة هاتف لشركة  Iphone",
+      time: "منذ يومين",
+      type: "grade",
     },
     {
-      student: 'نور السيد',
-      action: 'حصلت على درجة 88 في مشروع التعبئة والتغليف',
-      time: 'أمس',
-      type: 'grade'
+      student: "فاطمة الزهراء عبدالسلام  ",
+      action: " اكمال مجموعة تصاميم لمحل حلويات الذهبي  ",
+      time: "منذ يوم",
+      type: "grade",
     },
   ];
 
   const getActivityIcon = (type: string) => {
     switch (type) {
-      case 'grade':
+      case "grade":
         return <Award className="w-4 h-4 text-green-600" />;
-      case 'assignment':
+      case "assignment":
         return <FileText className="w-4 h-4 text-blue-600" />;
-      case 'achievement':
+      case "achievement":
         return <TrendingUp className="w-4 h-4 text-purple-600" />;
       default:
         return <Users className="w-4 h-4 text-gray-600" />;
@@ -79,14 +79,21 @@ const Overview = () => {
         {stats.map((stat, index) => {
           const Icon = stat.icon;
           return (
-            <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200">
+            <div
+              key={index}
+              className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200"
+            >
               <div className="flex items-center">
                 <div className={`${stat.color} rounded-lg p-3`}>
                   <Icon className="w-6 h-6 text-white" />
                 </div>
                 <div className="mr-4">
-                  <h3 className="text-2xl font-bold text-gray-900">{stat.value}</h3>
-                  <p className="text-sm font-medium text-gray-600">{stat.title}</p>
+                  <h3 className="text-2xl font-bold text-gray-900">
+                    {stat.value}
+                  </h3>
+                  <p className="text-sm font-medium text-gray-600">
+                    {stat.title}
+                  </p>
                   <p className="text-xs text-gray-500 mt-1">{stat.change}</p>
                 </div>
               </div>
@@ -103,12 +110,17 @@ const Overview = () => {
         <div className="p-6">
           <div className="space-y-4">
             {recentActivity.map((activity, index) => (
-              <div key={index} className="flex items-start space-x-reverse space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-150">
+              <div
+                key={index}
+                className="flex items-start space-x-reverse space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-150"
+              >
                 <div className="flex-shrink-0 mt-1">
                   {getActivityIcon(activity.type)}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-gray-900">{activity.student}</p>
+                  <p className="text-sm font-medium text-gray-900">
+                    {activity.student}
+                  </p>
                   <p className="text-sm text-gray-600">{activity.action}</p>
                   <p className="text-xs text-gray-500 mt-1">{activity.time}</p>
                 </div>
