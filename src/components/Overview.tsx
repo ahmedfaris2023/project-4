@@ -18,7 +18,7 @@ const Overview = () => {
     },
     {
       title: "المهام المكتملة",
-      value: "  10/20",
+      value: "  15/20",
       icon: FileText,
       color: "bg-orange-500",
       change: "85% معدل الإنجاز",
