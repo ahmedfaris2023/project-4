@@ -1,4 +1,4 @@
-import { GraduationCap, Award, FileText, BarChart3 } from 'lucide-react';
+import { GraduationCap, Award, FileText, BarChart3,Group } from 'lucide-react';
 
 interface HeaderProps {
   activeTab: string;
@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
     { id: 'overview', label: 'نظرة عامة', icon: BarChart3 },
     { id: 'grades', label: 'الدرجات', icon: GraduationCap },
     { id: 'top-students', label: 'الطلاب الأوائل', icon: Award },
-    { id: 'group', label: 'تصنيف الكروبات', icon: Award },
+    { id: 'group', label: 'تصنيف الكروبات', icon: Group },
     { id: 'assignments', label: 'المهام الأسبوعية', icon: FileText },
   ];
 
