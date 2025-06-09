@@ -10,6 +10,7 @@ const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
     { id: 'overview', label: 'نظرة عامة', icon: BarChart3 },
     { id: 'grades', label: 'الدرجات', icon: GraduationCap },
     { id: 'top-students', label: 'الطلاب الأوائل', icon: Award },
+    { id: 'group', label: 'تصنيف الكروبات', icon: Award },
     { id: 'assignments', label: 'المهام الأسبوعية', icon: FileText },
   ];
 
