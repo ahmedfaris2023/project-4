@@ -105,9 +105,6 @@ const TopStudents = () => {
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {student.name}
                 </h3>
-                <p className="text-sm text-gray-600 mb-4">
-                  {student.specialty}
-                </p>
 
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
