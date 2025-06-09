@@ -20,7 +20,7 @@ const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-reverse space-x-3">
             <div className="w-14 h-14 bg-gradient-to-br  flex items-center justify-center">
-              <img src="/public/img/On-Click.png" />
+              <img src="/img/On-Click.png" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">On Click</h1>
