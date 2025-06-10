@@ -174,7 +174,7 @@ const GradesTable = () => {
     },
     {
       id: 16,
-      name: "سرى نزار محمود ",
+      name: "سرى انس ",
       subjects: {
         "الهوية البصرية": "قريبا",
         "التصاميم الفردية": 0,
@@ -415,19 +415,24 @@ const GradesTable = () => {
                     key={subject}
                     className="px-6 py-4 whitespace-nowrap text-center"
                   >
-                    <span
-                      className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${getGradeColor(
+                    {(() => {
+                      const grade =
                         student.subjects[
                           subject as keyof typeof student.subjects
-                        ]
-                      )}`}
-                    >
-                      {
-                        student.subjects[
-                          subject as keyof typeof student.subjects
-                        ]
-                      }
-                    </span>
+                        ];
+                      const isNumber = typeof grade === "number";
+                      return (
+                        <span
+                          className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
+                            isNumber
+                              ? getGradeColor(grade as number)
+                              : "text-gray-500 bg-gray-100"
+                          }`}
+                        >
+                          {grade}
+                        </span>
+                      );
+                    })()}
                   </td>
                 ))}
                 <td className="px-6 py-4 whitespace-nowrap text-center">
