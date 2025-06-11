@@ -34,23 +34,18 @@ const Overview = () => {
 
   const recentActivity = [
     {
-      student: "ريام محمد يحيى",
-      action: "اكمال مجموعة تصاميم مبيعات اجهزة الكترونية",
-      time: "منذ يومين",
+      student: "GROUP A",
+      action: "اكمال شعار الوجبات السريعة ",
+      time: "اليوم",
       type: "grade",
     },
     {
-      student: "مريم حسام صالح",
-      action: "TECNO اكمال مجموعة تصاميم مبيعات اجهزة هاتف لشركة ",
-      time: "منذ يومين",
+      student: " GROUP R",
+      action: "    اكمال شعار لمسة ",
+      time: " يوم",
       type: "grade",
     },
-    {
-      student: "سارة صلاح ",
-      action: " اكمال مجموعة تصاميم مبيعات اجهزة هاتف لشركة  Iphone",
-      time: "منذ ثلاثة أيام",
-      type: "grade",
-    },
+
     {
       student: "فاطمة الزهراء عبدالسلام  ",
       action: " اكمال مجموعة تصاميم لمحل حلويات الذهبي  ",

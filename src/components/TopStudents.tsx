@@ -5,7 +5,7 @@ const TopStudents = () => {
     {
       rank: 1,
       name: "شهد نزار محمود",
-      average: 80.5,
+      average: 81.5,
       improvement: "+50",
       projects: 15,
       icon: Trophy,
@@ -26,8 +26,8 @@ const TopStudents = () => {
     },
     {
       rank: 3,
-      name: "الاء عبد الباسط خليل",
-      average: 72.4,
+      name: "هاجر عزام ",
+      average: 75.7,
       improvement: "+43.6",
       projects: 14,
       icon: Medal,
