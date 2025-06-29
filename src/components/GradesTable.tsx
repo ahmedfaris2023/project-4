@@ -325,6 +325,13 @@ const GradesTable = () => {
     return "text-red-600 bg-red-50";
   };
 
+  // ترتيب الطلاب حسب المعدل
+  const sortedStudents = [...filteredStudents].sort(
+    (a, b) => b.average - a.average
+  );
+  const top5 = sortedStudents.slice(0, 5).map((s) => s.id);
+  const top14 = sortedStudents.slice(0, 14).map((s) => s.id);
+
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100">
       {/* Header */}
@@ -372,6 +379,9 @@ const GradesTable = () => {
               <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                 المجموع
               </th>
+              <th className="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                القبول
+              </th>
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
@@ -417,6 +427,23 @@ const GradesTable = () => {
                     )}`}
                   >
                     {student.average}
+                  </span>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-center">
+                  <span
+                    className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold text-white ${
+                      top5.includes(student.id)
+                        ? "bg-green-600"
+                        : top14.includes(student.id)
+                        ? "bg-blue-600"
+                        : "bg-gray-200 text-gray-600"
+                    }`}
+                  >
+                    {top5.includes(student.id)
+                      ? "تم القبول في المستوى الأول"
+                      : top14.includes(student.id)
+                      ? "تم القبول في المستوى الثاني"
+                      : ""}
                   </span>
                 </td>
               </tr>
