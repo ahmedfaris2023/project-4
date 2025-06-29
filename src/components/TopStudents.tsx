@@ -5,9 +5,9 @@ const TopStudents = () => {
     {
       rank: 1,
       name: "شهد نزار محمود",
-      average: 81.5,
+      average: 94.5,
       improvement: "+50",
-      projects: 15,
+      projects: 17,
       icon: Trophy,
       color: "from-yellow-400 to-yellow-600",
       bgColor: "bg-yellow-50",
@@ -16,9 +16,9 @@ const TopStudents = () => {
     {
       rank: 2,
       name: " ريام محمد يحيى",
-      average: 78.0,
+      average: 90.1,
       improvement: "+45.2",
-      projects: 18,
+      projects: 19,
       icon: Award,
       color: "from-gray-300 to-gray-500",
       bgColor: "bg-gray-50",
@@ -26,10 +26,10 @@ const TopStudents = () => {
     },
     {
       rank: 3,
-      name: "هاجر عزام ",
-      average: 75.7,
+      name: "الاء عبد الباسط",
+      average: 83.7,
       improvement: "+43.6",
-      projects: 14,
+      projects: 16,
       icon: Medal,
       color: "from-orange-400 to-orange-600",
       bgColor: "bg-orange-50",
@@ -39,19 +39,19 @@ const TopStudents = () => {
 
   const achievements = [
     {
-      student: " جمعية خيرية",
+      student: "  هوية البصرية لمسة",
       achievement: "أفضل مشروع ",
       date: "2025/5",
       icon: Star,
     },
     {
-      student: " مصرف اشور",
+      student: "هوية البصرية فريشلي",
       achievement: "ثاني أفضل مشروع ",
       date: "2025/5",
       icon: Award,
     },
     {
-      student: " زين العراق",
+      student: "هوية البصرية ثلجة ",
       achievement: "ثالث أفضل مشروع ",
       date: "2025/5",
       icon: Award,
