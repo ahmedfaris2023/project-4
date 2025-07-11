@@ -4,6 +4,7 @@ import Overview from "./components/Overview";
 import GradesTable from "./components/GradesTable";
 import TopStudents from "./components/TopStudents";
 import Assignments from "./components/Assignments";
+import GradesTableTwo from "./components/GradesTableTwo";
 
 function App() {
   const [activeTab, setActiveTab] = useState("overview");
@@ -14,6 +15,8 @@ function App() {
         return <Overview />;
       case "grades":
         return <GradesTable />;
+      case "GradesTwo":
+        return <GradesTableTwo />;
       case "top-students":
         return <TopStudents />;
       case "assignments":

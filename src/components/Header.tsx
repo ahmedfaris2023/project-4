@@ -9,6 +9,7 @@ const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab }) => {
   const navigationItems = [
     { id: "overview", label: "نظرة عامة", icon: BarChart3 },
     { id: "grades", label: "الدرجات", icon: GraduationCap },
+    { id: "GradesTwo", label: "الدرجات (جدول 2)", icon: GraduationCap },
     { id: "top-students", label: "الطلاب الأوائل", icon: Award },
     { id: "group", label: "تصنيف الكروبات", icon: Group },
     { id: "assignments", label: "المهام الأسبوعية", icon: FileText },
