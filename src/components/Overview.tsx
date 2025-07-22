@@ -4,7 +4,7 @@ const Overview = () => {
   const stats = [
     {
       title: "إجمالي الطلاب",
-      value: "27",
+      value: "67",
       icon: Users,
       color: "bg-blue-500",
       change: "مدة الدورة شهر ونص ",
